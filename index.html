@@ -1,0 +1,25 @@
+<html> <head> <title>Makeup Store</title> <!-- Added a descriptive page title --> <style> body { font-family: Arial, sans-serif; }
+header { text-align: center; padding: 20px; background-color: #f8f9fa; }
+
+h1 { margin: 0; }
+
+nav { text-align: center; background-color: #e9ecef; padding: 10px; }
+
+nav a { color: #007bff; text-decoration: none; margin: 0 10px; }
+
+nav a:hover { color: #0056b3; }
+
+main { display: flex; justify-content: space-around; padding: 20px; }
+
+.product { text-align: center; }
+
+.product h2 { margin: 0; }
+
+.product p { margin: 10px 0; }
+
+.product img { width: 200px; }
+
+footer { text-align: center; padding: 10px; background-color: #f8f9fa; }
+
+/* Added a class to increase contrast */ .high-contrast { color: #333; background-color: #fff; } </style>
+</head> <body> <!-- Added the lang attribute to the html tag --> <html lang="en"> <header> <h1>Welcome to our Makeup Store!</h1> </header> <nav> <a href="#blush">Blush</a> <a href="#mascara">Mascara</a> <a href="#beauty-blender">Beauty Blender</a> <a href="#lip-gloss">Lip Gloss</a> </nav> <!-- Added the high-contrast class to the main element --> <main class="high-contrast"> <div class="product" id="blush"> <img src="blush.jpg" alt="Blush"> <h2>Blush</h2> <p>Our blush will give you a natural, healthy glow. Perfect for any skin tone!</p> <button>Add to Cart</button> </div> <div class="product" id="mascara"> <img src="mascara.jpg" alt="Mascara"> <h2>Mascara</h2> <p>Our mascara will give you long, voluminous lashes. Say goodbye to clumpy mascara!</p> <button>Add to Cart</button> </div> <div class="product" id="beauty-blender"> <img src="beauty-blender.jpg" alt="Beauty Blender"> <h2>Beauty Blender</h2> <p>Our beauty blender will give you a flawless, airbrushed finish. Perfect for foundation, concealer, and more!</p> <button>Add to Cart</button> </div> <div class="product" id="lip-gloss"> <img src="lip-gloss.jpg" alt="Lip Gloss"> <h2>Lip Gloss</h2> <p>Our lip gloss is shiny, but not sticky. It's the perfect finishing touch to any look!</p> <button>Add to Cart</button> </div> </main> <footer> &copy; 2023 Makeup Store </footer> <script> // Add to cart functionality const buttons = document.querySelectorAll("button"); buttons.forEach((button) => { button.addEventListener("click", () => { alert("Item added to cart!"); }); }); </script> </body> </html>
